@@ -1,0 +1,205 @@
+{
+  "name": "Marvel Test \u2014 Subway Station",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "03_subway_station/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "03_subway_station/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1464,
+  "height": 1074,
+  "padding": 0.05,
+  "initial": {
+    "x": 732,
+    "y": 537,
+    "scale": 0.55
+  },
+  "backgroundColor": "#111111",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.15
+  },
+  "regions": [
+    {
+      "_id": "5vmfCWb84KMDz8qM",
+      "name": "Track Hazard North",
+      "color": "#ffb238",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            0.0,
+            131.81,
+            1464.0,
+            131.81,
+            1464.0,
+            278.26,
+            0.0,
+            278.26
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "FEhiiqS40UNbFd83",
+          "type": "executeScript",
+          "system": {
+            "events": [
+              "tokenMoveIn"
+            ],
+            "source": "// Test-pack hook: track/electrical hazard."
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "QTJcPdsCmS2hcSC9",
+      "name": "Track Hazard South",
+      "color": "#ffb238",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            0.0,
+            795.74,
+            1464.0,
+            795.74,
+            1464.0,
+            942.19,
+            0.0,
+            942.19
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "0wgNcwlUIQiHrF3w",
+          "type": "executeScript",
+          "system": {
+            "events": [
+              "tokenMoveIn"
+            ],
+            "source": "// Test-pack hook: track/electrical hazard."
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "2EYLG57IqNyJXh6G",
+      "name": "Mezzanine Underpass",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            512.4,
+            380.78,
+            951.6,
+            380.78,
+            951.6,
+            532.12,
+            512.4,
+            532.12
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": 0,
+        "top": 15
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Two-track subway encounter with overhead mezzanine and track hazard Regions.",
+      "realisticPass": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

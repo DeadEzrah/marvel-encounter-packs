@@ -1,0 +1,59 @@
+{
+  "id": "dockyard-warehouse",
+  "name": "Dockyard Warehouse",
+  "version": "0.1.0",
+  "compatibility": {
+    "framework": "0.1.0",
+    "foundry": "14.365",
+    "system": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  },
+  "scene": {
+    "sceneFile": "scene.json",
+    "background": "art/background.png",
+    "foreground": "art/foreground.png",
+    "gridSize": 100,
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "gridVisible": false,
+    "sceneData": "scene.json"
+  },
+  "settings": {
+    "automation": "confirm",
+    "resettable": true
+  },
+  "regions": [
+    "regions.json"
+  ],
+  "objects": [
+    "objects.json"
+  ],
+  "objectives": [
+    "objectives.json"
+  ],
+  "phases": [
+    "phases.json"
+  ],
+  "clocks": [
+    {
+      "id": "cargo-fire",
+      "name": "Cargo Fire",
+      "max": 6,
+      "value": 0,
+      "public": true
+    }
+  ],
+  "triggers": [
+    {
+      "id": "cargo-fire-round",
+      "event": "combat.roundEnd",
+      "actions": [
+        {
+          "type": "increment-clock",
+          "clock": "cargo-fire",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

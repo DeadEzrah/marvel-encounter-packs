@@ -1,0 +1,12 @@
+[
+  {
+    "id": "clear-platform",
+    "name": "Clear the Platform",
+    "type": "counter",
+    "primary": true,
+    "public": true,
+    "target": 4,
+    "value": 0,
+    "status": "active"
+  }
+]

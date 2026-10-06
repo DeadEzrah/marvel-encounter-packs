@@ -1,0 +1,40 @@
+{
+  "id": "marvel-encounter-packs",
+  "type": "module",
+  "title": "Marvel Encounter Packs",
+  "description": "Reusable encounter content for the Marvel Encounter Framework.",
+  "version": "0.2.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.365"
+  },
+  "authors": [
+    {
+      "name": "Marvel Encounter Framework Project"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "marvel-multiverse",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0",
+          "verified": "3.0.0"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "marvel-encounter-framework",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.2.0"
+        }
+      }
+    ]
+  }
+}

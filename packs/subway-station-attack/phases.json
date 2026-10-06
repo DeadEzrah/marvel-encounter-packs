@@ -1,0 +1,33 @@
+[
+  {
+    "id": "station-fight",
+    "name": "Station Fight",
+    "order": 1,
+    "onEnter": [
+      {
+        "type": "chat-message",
+        "text": "<h3>Subway Station Attack</h3><p>Encounter started: Station Fight.</p>"
+      }
+    ]
+  },
+  {
+    "id": "power-failure",
+    "name": "Power Failure",
+    "order": 2,
+    "trigger": {
+      "clock": "train-arrival",
+      "gte": 4
+    },
+    "onEnter": []
+  },
+  {
+    "id": "tunnel-crisis",
+    "name": "Tunnel Crisis",
+    "order": 3,
+    "trigger": {
+      "clock": "train-arrival",
+      "gte": 6
+    },
+    "onEnter": []
+  }
+]

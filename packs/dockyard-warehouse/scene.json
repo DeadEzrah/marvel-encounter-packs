@@ -1,0 +1,193 @@
+{
+  "name": "Marvel Test \u2014 Dockyard Warehouse",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "05_dockyard_warehouse/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "05_dockyard_warehouse/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1448,
+  "height": 1086,
+  "padding": 0.05,
+  "initial": {
+    "x": 724,
+    "y": 543,
+    "scale": 0.62
+  },
+  "backgroundColor": "#101010",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.1
+  },
+  "regions": [
+    {
+      "_id": "HTXFoaWVlHENiBYK",
+      "name": "Water Edge Hazard",
+      "color": "#00a8ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            0,
+            820,
+            1448,
+            820,
+            1448,
+            1086,
+            0,
+            1086
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "uxpqeNbOdBed0OB7",
+          "type": "executeScript",
+          "system": {
+            "events": [
+              "tokenMoveIn"
+            ],
+            "source": "// Placeholder: falling or water hazard hook."
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "e5QlLWFWI9elUaZY",
+      "name": "Overhead Container Bridge",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            110,
+            880,
+            1335,
+            880,
+            1335,
+            1035,
+            110,
+            1035
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": 15,
+        "top": 35
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "78KtuL78trVtkbbW",
+      "name": "Suspended Crane Path",
+      "color": "#ffd166",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            0,
+            0,
+            1448,
+            0,
+            1448,
+            405,
+            0,
+            405
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": 20,
+        "top": 40
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Container yard and dock with overlay gantry crane, elevated catwalk, and overhead container bridge.",
+      "expansionPack": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

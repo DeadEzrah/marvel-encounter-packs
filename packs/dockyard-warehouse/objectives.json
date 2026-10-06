@@ -1,0 +1,10 @@
+[
+  {
+    "id": "secure-dock",
+    "name": "Secure the Dock",
+    "type": "binary",
+    "primary": true,
+    "public": true,
+    "status": "active"
+  }
+]

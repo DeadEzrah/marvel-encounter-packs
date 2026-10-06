@@ -1,0 +1,10 @@
+[
+  {
+    "id": "protect-launch-deck",
+    "name": "Protect the Launch Deck",
+    "type": "binary",
+    "primary": true,
+    "public": true,
+    "status": "active"
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "name": "Marvel Test \u2014 Aerial Carrier Deck",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "06_aerial_carrier_deck/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "06_aerial_carrier_deck/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1448,
+  "height": 1086,
+  "padding": 0.05,
+  "initial": {
+    "x": 724,
+    "y": 543,
+    "scale": 0.62
+  },
+  "backgroundColor": "#101010",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.1
+  },
+  "regions": [
+    {
+      "_id": "rIxarl7wcpUCp94n",
+      "name": "Port Elevator",
+      "color": "#ffd166",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            850,
+            135,
+            1125,
+            135,
+            1125,
+            365,
+            850,
+            365
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "qwtQQ83MP5vTYKKR",
+      "name": "Starboard Elevator",
+      "color": "#ffd166",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            775,
+            790,
+            1085,
+            790,
+            1085,
+            1040,
+            775,
+            1040
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "NcNh64R1Bj2ssuM8",
+      "name": "Launch Runway",
+      "color": "#ff7a45",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            170,
+            365,
+            1290,
+            365,
+            1290,
+            810,
+            170,
+            810
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "mjJKZNzOETI8YaSC",
+          "type": "modifyMovementCost",
+          "system": {
+            "mode": "multiply",
+            "value": 2
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Generic superhero carrier flight deck with overlay service gantries and radar/control platform.",
+      "expansionPack": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

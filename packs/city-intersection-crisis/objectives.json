@@ -1,0 +1,12 @@
+[
+  {
+    "id": "rescue-civilians",
+    "name": "Rescue the Civilians",
+    "type": "counter",
+    "primary": true,
+    "public": true,
+    "target": 6,
+    "value": 0,
+    "status": "active"
+  }
+]

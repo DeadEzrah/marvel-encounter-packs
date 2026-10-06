@@ -1,0 +1,10 @@
+[
+  {
+    "id": "catch-target",
+    "name": "Catch the Target",
+    "type": "binary",
+    "primary": true,
+    "public": true,
+    "status": "active"
+  }
+]

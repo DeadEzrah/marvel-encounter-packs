@@ -1,0 +1,33 @@
+[
+  {
+    "id": "container-yard",
+    "name": "Container Yard",
+    "order": 1,
+    "onEnter": [
+      {
+        "type": "chat-message",
+        "text": "<h3>Dockyard Warehouse</h3><p>Encounter started: Container Yard.</p>"
+      }
+    ]
+  },
+  {
+    "id": "crane-failure",
+    "name": "Crane Failure",
+    "order": 2,
+    "trigger": {
+      "clock": "cargo-fire",
+      "gte": 4
+    },
+    "onEnter": []
+  },
+  {
+    "id": "dockside-inferno",
+    "name": "Dockside Inferno",
+    "order": 3,
+    "trigger": {
+      "clock": "cargo-fire",
+      "gte": 6
+    },
+    "onEnter": []
+  }
+]

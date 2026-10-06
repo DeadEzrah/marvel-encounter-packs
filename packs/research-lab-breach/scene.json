@@ -1,0 +1,194 @@
+{
+  "name": "Marvel Test \u2014 Research Lab",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "02_research_lab/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "02_research_lab/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1464,
+  "height": 1074,
+  "padding": 0.05,
+  "initial": {
+    "x": 732,
+    "y": 537,
+    "scale": 0.55
+  },
+  "backgroundColor": "#111111",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.15
+  },
+  "regions": [
+    {
+      "_id": "Jg8ie6TSK8nF0zuY",
+      "name": "Reactor Core",
+      "color": "#ff453a",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            651.48,
+            456.45,
+            812.52,
+            456.45,
+            812.52,
+            617.55,
+            651.48,
+            617.55
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "wOmdXUiMgEBX8kPx",
+          "type": "executeScript",
+          "system": {
+            "events": [
+              "tokenMoveIn",
+              "tokenTurnStart"
+            ],
+            "source": "// Test-pack hook: apply reactor hazard here."
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "1WneiXzJ2GHY4EPf",
+      "name": "Upper Catwalk",
+      "color": "#38a3ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            546.56,
+            351.49,
+            917.44,
+            351.49,
+            917.44,
+            722.51,
+            546.56,
+            722.51
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": 10,
+        "top": 25
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "plCHqUViJsqRbS2J",
+      "name": "North Catwalk Access",
+      "color": "#38a3ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            668.56,
+            170.86,
+            795.44,
+            170.86,
+            795.44,
+            371.02,
+            668.56,
+            371.02
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": 0,
+        "top": 25
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Core Region test with scripted reactor hook and elevated catwalk overlay.",
+      "realisticPass": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "name": "Marvel Test \u2014 Rooftop Chase",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "04_rooftop_chase/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "04_rooftop_chase/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1448,
+  "height": 1086,
+  "padding": 0.05,
+  "initial": {
+    "x": 724,
+    "y": 543,
+    "scale": 0.62
+  },
+  "backgroundColor": "#101010",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.1
+  },
+  "regions": [
+    {
+      "_id": "rIszjgJHbfhTsIsV",
+      "name": "North Bridge",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            620,
+            245,
+            845,
+            245,
+            845,
+            345,
+            620,
+            345
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": 10,
+        "top": 25
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "4CPALT2yo4a4jxzx",
+      "name": "Center Alley Gap",
+      "color": "#ff7a45",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            660,
+            0,
+            790,
+            1086,
+            860,
+            1086,
+            730,
+            0
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "syrsjdXn9WkqtNTX",
+      "name": "South Bridge",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            570,
+            570,
+            860,
+            665,
+            815,
+            750,
+            520,
+            650
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": 10,
+        "top": 25
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Connected urban rooftops with overlay billboard, water-tower platform, and enclosed rooftop bridge.",
+      "expansionPack": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

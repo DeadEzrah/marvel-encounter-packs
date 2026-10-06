@@ -1,0 +1,10 @@
+[
+  {
+    "id": "stabilize-reactor",
+    "name": "Stabilize the Reactor",
+    "type": "binary",
+    "primary": true,
+    "public": true,
+    "status": "active"
+  }
+]

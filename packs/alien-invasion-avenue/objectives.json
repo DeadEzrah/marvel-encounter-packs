@@ -1,0 +1,10 @@
+[
+  {
+    "id": "destroy-anchor",
+    "name": "Destroy the Invasion Anchor",
+    "type": "binary",
+    "primary": true,
+    "public": true,
+    "status": "active"
+  }
+]

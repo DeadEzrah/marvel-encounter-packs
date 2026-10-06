@@ -1,0 +1,40 @@
+{
+  "name": "Marvel Encounter Packs",
+  "version": "0.2.0",
+  "framework": "marvel-encounter-framework",
+  "frameworkVersion": "0.2.0",
+  "packs": [
+    {
+      "id": "city-intersection-crisis",
+      "name": "City Intersection Crisis"
+    },
+    {
+      "id": "research-lab-breach",
+      "name": "Research Lab Breach"
+    },
+    {
+      "id": "subway-station-attack",
+      "name": "Subway Station Attack"
+    },
+    {
+      "id": "rooftop-chase",
+      "name": "Rooftop Chase"
+    },
+    {
+      "id": "dockyard-warehouse",
+      "name": "Dockyard Warehouse"
+    },
+    {
+      "id": "aerial-carrier-deck",
+      "name": "Aerial Carrier Deck"
+    },
+    {
+      "id": "superhuman-prison-breakout",
+      "name": "Superhuman Prison Breakout"
+    },
+    {
+      "id": "alien-invasion-avenue",
+      "name": "Alien Invasion Avenue"
+    }
+  ]
+}

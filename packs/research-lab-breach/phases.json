@@ -1,0 +1,33 @@
+[
+  {
+    "id": "containment-failure",
+    "name": "Containment Failure",
+    "order": 1,
+    "onEnter": [
+      {
+        "type": "chat-message",
+        "text": "<h3>Research Lab Breach</h3><p>Encounter started: Containment Failure.</p>"
+      }
+    ]
+  },
+  {
+    "id": "overload",
+    "name": "Overload",
+    "order": 2,
+    "trigger": {
+      "clock": "reactor-instability",
+      "gte": 4
+    },
+    "onEnter": []
+  },
+  {
+    "id": "core-breach",
+    "name": "Core Breach",
+    "order": 3,
+    "trigger": {
+      "clock": "reactor-instability",
+      "gte": 6
+    },
+    "onEnter": []
+  }
+]

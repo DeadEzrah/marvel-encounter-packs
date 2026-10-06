@@ -1,0 +1,225 @@
+{
+  "name": "Marvel Test \u2014 City Intersection",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "01_city_intersection/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "01_city_intersection/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1464,
+  "height": 1074,
+  "padding": 0.05,
+  "initial": {
+    "x": 732,
+    "y": 537,
+    "scale": 0.55
+  },
+  "backgroundColor": "#111111",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.15
+  },
+  "regions": [
+    {
+      "_id": "QxMfNxyB7Q4FRc4Q",
+      "name": "Impact Crater",
+      "color": "#ff7339",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            624.64,
+            429.6,
+            849.12,
+            429.6,
+            849.12,
+            654.16,
+            624.64,
+            654.16
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "t1JLWx8AyxejOoaH",
+          "type": "modifyMovementCost",
+          "system": {
+            "mode": "multiply",
+            "value": 2
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "rnDn3VRnEXkaH5xn",
+      "name": "Skybridge Underpass",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            575.84,
+            292.91,
+            888.16,
+            292.91,
+            888.16,
+            358.81,
+            575.84,
+            358.81
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": 0,
+        "top": 15
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "nkmxzNPxhKzmeEI7",
+      "name": "Northwest Awning",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            78.08,
+            283.15,
+            370.88,
+            283.15,
+            370.88,
+            371.02,
+            78.08,
+            371.02
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": 0,
+        "top": 10
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "OWyF9osLpfuruQQP",
+      "name": "Southeast Awning",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            1098.0,
+            700.54,
+            1385.92,
+            700.54,
+            1385.92,
+            783.53,
+            1098.0,
+            783.53
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "elevation": {
+        "bottom": 0,
+        "top": 10
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Gridless 100px/5ft test scene with impact crater and overhead structures.",
+      "realisticPass": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

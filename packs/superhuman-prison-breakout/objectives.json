@@ -1,0 +1,10 @@
+[
+  {
+    "id": "restore-lockdown",
+    "name": "Restore Lockdown",
+    "type": "binary",
+    "primary": true,
+    "public": true,
+    "status": "active"
+  }
+]

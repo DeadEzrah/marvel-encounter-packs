@@ -1,0 +1,9 @@
+{
+  "name": "marvel-encounter-packs",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-packs.mjs"
+  }
+}

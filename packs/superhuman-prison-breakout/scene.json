@@ -1,0 +1,191 @@
+{
+  "name": "Marvel Test \u2014 Superhuman Prison Breakout",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "07_superhuman_prison/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "07_superhuman_prison/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1448,
+  "height": 1086,
+  "padding": 0.05,
+  "initial": {
+    "x": 724,
+    "y": 543,
+    "scale": 0.62
+  },
+  "backgroundColor": "#101010",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.1
+  },
+  "regions": [
+    {
+      "_id": "38t3iXfWKqpCyxFr",
+      "name": "Central Control Hub",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            515,
+            385,
+            935,
+            385,
+            935,
+            705,
+            515,
+            705
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "uepGqVi3dtWm70vZ",
+      "name": "Breach Rubble West",
+      "color": "#ff7a45",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            0,
+            365,
+            315,
+            365,
+            315,
+            685,
+            0,
+            685
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "C8tezBURwJDaHbcG",
+          "type": "modifyMovementCost",
+          "system": {
+            "mode": "multiply",
+            "value": 2
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "A4eJ4vF8WTaEeZf9",
+      "name": "Overhead Ring Zone",
+      "color": "#39a0ff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            390,
+            205,
+            1060,
+            205,
+            1060,
+            875,
+            390,
+            875
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": 15,
+        "top": 30
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "High-security prison complex with overlay catwalk ring and extra elevated catwalk segment.",
+      "expansionPack": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

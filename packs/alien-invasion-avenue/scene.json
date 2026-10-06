@@ -1,0 +1,204 @@
+{
+  "name": "Marvel Test \u2014 Alien Invasion Avenue",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "08_alien_invasion_avenue/background.png",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "tint": "#ffffff"
+  },
+  "foreground": "08_alien_invasion_avenue/foreground.png",
+  "foregroundElevation": 20,
+  "thumb": null,
+  "width": 1448,
+  "height": 1086,
+  "padding": 0.05,
+  "initial": {
+    "x": 724,
+    "y": 543,
+    "scale": 0.62
+  },
+  "backgroundColor": "#101010",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0.0,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fog": {
+    "exploration": true,
+    "overlay": null,
+    "colors": {
+      "explored": "#000000",
+      "unexplored": "#000000"
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      }
+    },
+    "darknessLevel": 0.1
+  },
+  "regions": [
+    {
+      "_id": "xEyrvWTfEP3pQHyD",
+      "name": "Portal Node",
+      "color": "#b26bff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            1110,
+            255,
+            1448,
+            255,
+            1448,
+            720,
+            1110,
+            720
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "DIF8JjMVODAULu0b",
+          "type": "executeScript",
+          "system": {
+            "events": [
+              "tokenMoveIn",
+              "tokenTurnStart"
+            ],
+            "source": "// Placeholder: alien portal effect hook."
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "fmaL1tVepMFry72W",
+      "name": "Main Crater",
+      "color": "#ff7a45",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            270,
+            165,
+            610,
+            165,
+            610,
+            400,
+            270,
+            400
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "9V4QF8arswKmlqZP",
+          "type": "modifyMovementCost",
+          "system": {
+            "mode": "multiply",
+            "value": 2
+          },
+          "disabled": false
+        }
+      ],
+      "visibility": 0,
+      "locked": false
+    },
+    {
+      "_id": "9mhKEzL0aPJFpJrp",
+      "name": "Alien Overgrowth",
+      "color": "#b26bff",
+      "shapes": [
+        {
+          "type": "polygon",
+          "points": [
+            640,
+            700,
+            1448,
+            700,
+            1448,
+            1086,
+            640,
+            1086
+          ],
+          "hole": false,
+          "rotation": 0,
+          "scale": 1,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "elevation": {
+        "bottom": 5,
+        "top": 25
+      },
+      "behaviors": [],
+      "visibility": 0,
+      "locked": false
+    }
+  ],
+  "walls": [],
+  "lights": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "notes": [],
+  "flags": {
+    "core": {},
+    "marvelMultiverseTestPack": {
+      "notes": "Damaged city avenue with alien portal node and overlay alien bridge, platform, and growth canopy.",
+      "expansionPack": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "marvel-multiverse",
+    "systemVersion": "3.0.0"
+  }
+}

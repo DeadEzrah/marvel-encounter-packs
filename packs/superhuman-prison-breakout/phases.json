@@ -1,0 +1,33 @@
+[
+  {
+    "id": "breach",
+    "name": "Breach",
+    "order": 1,
+    "onEnter": [
+      {
+        "type": "chat-message",
+        "text": "<h3>Superhuman Prison Breakout</h3><p>Encounter started: Breach.</p>"
+      }
+    ]
+  },
+  {
+    "id": "lockdown-failure",
+    "name": "Lockdown Failure",
+    "order": 2,
+    "trigger": {
+      "clock": "containment-loss",
+      "gte": 4
+    },
+    "onEnter": []
+  },
+  {
+    "id": "mass-escape",
+    "name": "Mass Escape",
+    "order": 3,
+    "trigger": {
+      "clock": "containment-loss",
+      "gte": 6
+    },
+    "onEnter": []
+  }
+]

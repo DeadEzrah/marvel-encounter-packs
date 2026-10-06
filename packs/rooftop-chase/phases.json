@@ -1,0 +1,33 @@
+[
+  {
+    "id": "pursuit",
+    "name": "Pursuit",
+    "order": 1,
+    "onEnter": [
+      {
+        "type": "chat-message",
+        "text": "<h3>Rooftop Chase</h3><p>Encounter started: Pursuit.</p>"
+      }
+    ]
+  },
+  {
+    "id": "rooftop-hazards",
+    "name": "Rooftop Hazards",
+    "order": 2,
+    "trigger": {
+      "clock": "escape-distance",
+      "gte": 4
+    },
+    "onEnter": []
+  },
+  {
+    "id": "last-jump",
+    "name": "Last Jump",
+    "order": 3,
+    "trigger": {
+      "clock": "escape-distance",
+      "gte": 6
+    },
+    "onEnter": []
+  }
+]
