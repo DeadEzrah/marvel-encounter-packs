@@ -3,7 +3,7 @@
   "type": "module",
   "title": "Marvel Encounter Packs",
   "description": "Reusable encounter content for the Marvel Encounter Framework.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14.365"
@@ -32,7 +32,14 @@
         "id": "marvel-encounter-framework",
         "type": "module",
         "compatibility": {
-          "minimum": "0.2.0"
+          "minimum": "0.3.0"
+        }
+      },
+      {
+        "id": "marvel-character-library",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.1.0"
         }
       }
     ]

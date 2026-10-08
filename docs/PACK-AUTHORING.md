@@ -10,3 +10,5 @@
 8. Keep phase changes reversible where practical.
 9. Use native Foundry flags as authoritative metadata; Tagger can be optional later.
 10. Assume foreground art is an overhead layer that tokens may pass beneath.
+11. Reference reusable Actors through an `actors` roster of compendium UUIDs.
+12. Use `spawn-actors` in phases or triggers for reinforcements; set `once: true` when an arrival must not repeat.

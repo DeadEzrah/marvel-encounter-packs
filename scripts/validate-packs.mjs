@@ -6,7 +6,7 @@ const root = path.resolve(import.meta.dirname, "..");
 const index = await readJson(path.join(root, "packs.json"));
 const errors = [];
 const packIds = new Set();
-const collections = ["regions", "objects", "objectives", "phases"];
+const collections = ["regions", "objects", "objectives", "phases", "actors"];
 const actionTypes = new Set([
   "increment-clock",
   "set-clock",
@@ -16,6 +16,10 @@ const actionTypes = new Set([
   "set-region-enabled",
   "play-sound",
   "play-vfx",
+  "play-fxmaster",
+  "stop-fxmaster",
+  "set-fxmaster-regions",
+  "spawn-actors",
   "apply-health-damage",
   "apply-focus-damage",
   "apply-status",
@@ -61,6 +65,11 @@ for (const pack of index.packs ?? []) {
       for (const phase of resolved) {
         validateActions(pack.id, `phase ${phase.id} onEnter`, phase.onEnter);
         validateActions(pack.id, `phase ${phase.id} onExit`, phase.onExit);
+      }
+    }
+    if (collection === "actors") {
+      for (const actor of resolved) {
+        if (!actor.uuid) errors.push(`${pack.id}: actor '${actor.id}' has no compendium UUID.`);
       }
     }
   }
@@ -117,6 +126,21 @@ function validateActions(packId, owner, actions) {
   for (const action of actions) {
     if (!actionTypes.has(action?.type)) {
       errors.push(`${packId}: ${owner} uses unknown action '${action?.type ?? "<missing>"}'.`);
+      continue;
+    }
+    if (action.type === "play-fxmaster") {
+      if (typeof action.key !== "string" || !action.key.trim()) {
+        errors.push(`${packId}: ${owner} play-fxmaster action requires a key.`);
+      }
+      if (!action.core || typeof action.core !== "object" || Array.isArray(action.core)) {
+        errors.push(`${packId}: ${owner} play-fxmaster action requires a core effect payload.`);
+      }
+      if (action.plus != null && (typeof action.plus !== "object" || Array.isArray(action.plus))) {
+        errors.push(`${packId}: ${owner} play-fxmaster plus payload must be an object.`);
+      }
+    }
+    if (action.type === "stop-fxmaster" && (typeof action.key !== "string" || !action.key.trim())) {
+      errors.push(`${packId}: ${owner} stop-fxmaster action requires a key.`);
     }
   }
 }

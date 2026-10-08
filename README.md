@@ -9,6 +9,7 @@ This repository owns encounter content. It does **not** own rules or runtime orc
 - **Marvel Multiverse system** — rules, rolls, damage, Focus, Karma, powers, conditions
 - **Marvel Encounter Framework** — encounter orchestration, state, Regions, objectives, clocks, phases, VFX/audio adapters
 - **Marvel Encounter Packs** — maps, foregrounds, encounter manifests, semantic Regions, environmental objects, objectives, phases, and content
+- **Marvel Character Library** — reusable Heroes, Villains, and Minions/NPC Actor compendiums referenced by encounters
 
 ## Included starter packs
 
@@ -47,3 +48,5 @@ Every encounter directory includes the generated realistic map assets under `art
 Copy this folder to `{Foundry User Data}/Data/modules/marvel-encounter-packs`, then enable both Marvel Encounter Framework and Marvel Encounter Packs. The module registers every package in `packs.json`; activating an encounter creates or reuses its Scene.
 
 Run `npm run validate` after editing pack manifests or referenced content files.
+
+`Alien Invasion Avenue` demonstrates actor integration: three Alien Vanguard minions from the character library spawn when combat round 7 starts.
