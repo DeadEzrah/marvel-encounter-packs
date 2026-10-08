@@ -45,8 +45,25 @@ Every encounter directory includes the generated realistic map assets under `art
 
 ## Installation
 
-Copy this folder to `{Foundry User Data}/Data/modules/marvel-encounter-packs`, then enable both Marvel Encounter Framework and Marvel Encounter Packs. The module registers every package in `packs.json`; activating an encounter creates or reuses its Scene.
+Install Marvel Encounter Framework and Marvel Character Library first. In Foundry Setup, open **Add-on Modules**, select **Install Module**, and use:
+
+```text
+https://raw.githubusercontent.com/DeadEzrah/marvel-encounter-packs/main/module.json
+```
+
+For a manual installation, copy this folder to `{Foundry User Data}/Data/modules/marvel-encounter-packs`. Then enable Marvel Encounter Framework, Marvel Character Library, and Marvel Encounter Packs in that order. The module registers every package in `packs.json`; activating an encounter creates or reuses its Scene.
 
 Run `npm run validate` after editing pack manifests or referenced content files.
 
 `Alien Invasion Avenue` demonstrates actor integration: three Alien Vanguard minions from the character library spawn when combat round 7 starts.
+
+## Release
+
+Update the version in `module.json` and `package.json`, including the version in the `download` URL, then run:
+
+```powershell
+npm run validate:release
+npm run release:github
+```
+
+The release command validates every pack, creates the Foundry-ready ZIP, and publishes the ZIP and `module.json` under the matching `release-x.y.z` tag.

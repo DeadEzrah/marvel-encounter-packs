@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "node scripts/validate-packs.mjs"
+    "validate": "node scripts/validate-packs.mjs",
+    "validate:release": "node scripts/validate-release.mjs",
+    "release:github": "powershell -ExecutionPolicy Bypass -File .\\scripts\\publish-github-release.ps1 -Publish"
   }
 }
